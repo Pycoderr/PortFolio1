@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kenneth Lobo — Portfolio</title>
+  <style>
+    :root {
+      --accent: #1a73e8;
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --muted: #6b7280;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, var(--bg), #e3ebff);
+      color: #0f172a;
+    }
+    .site {
+      max-width: 1100px;
+      margin: 24px auto;
+      padding: 16px;
+    }
+    header {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #dbeafe, #eff6ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--accent);
+      font-size: 32px;
+      border: 3px solid rgba(15,23,42,0.06);
+    }
+    .meta-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 6px;
+    }
+    .chip {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--card);
+      border: 1px solid rgba(15,23,42,0.06);
+      font-size: 13px;
+      color: var(--muted);
+    }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .lead {
+      margin: 4px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    main {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 18px;
+    }
+    @media (max-width: 900px) {
+      main { grid-template-columns: 1fr; }
+    }
+    aside .card, section.card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 14px 16px;
+      box-shadow: 0 10px 25px rgba(15,23,42,0.06);
+      border: 1px solid rgba(15,23,42,0.04);
+      margin-bottom: 14px;
+    }
+    h2 {
+      margin: 0 0 8px 0;
+      font-size: 18px;
+      color: var(--accent);
+    }
+    h3 {
+      margin: 0 0 4px 0;
+      font-size: 15px;
+    }
+    p, li {
+      font-size: 14px;
+      color: var(--muted);
+    }
+    ul {
+      padding-left: 18px;
+      margin: 4px 0 0 0;
+    }
+    .skills-list span {
+      display: inline-block;
+      margin: 3px 4px 3px 0;
+      padding: 5px 9px;
+      border-radius: 8px;
+      border: 1px solid rgba(37,99,235,0.16);
+      background: #eff6ff;
+      font-size: 12px;
+      font-weight: 500;
+      color: #1d4ed8;
+    }
+    .project {
+      border-radius: 10px;
+      padding: 10px 12px;
+      border: 1px solid rgba(15,23,42,0.05);
+      background: #f9fafb;
+      margin-bottom: 10px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .small-label { font-size: 12px; color: var(--muted); }
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="site">
+    <header>
+      <div style="display:flex;gap:16px;align-items:center;">
+        <div class="avatar">KL</div>
+        <div>
+          <h1>Kenneth Lobo</h1>
+          <p class="lead">Aspiring AI Engineer · Machine Learning & Data Science · B.Tech CSE, Bennett University</p>
+          <div class="meta-chips">
+            <span class="chip">📍 New Delhi, India</span>
+            <span class="chip">📞 +91-9312147455</span>
+            <span class="chip">📧 <a href="mailto:E23CSEU1418@bennett.edu.in">E23CSEU1418@bennett.edu.in</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="meta-chips">
+        <span class="chip">GitHub: <a href="https://github.com/Pycoderr" target="_blank">Pycoderr</a></span>
+        <span class="chip">Open to internships</span>
+      </div>
+    </header>
+
+    <main>
+      <aside>
+        <div class="card">
+          <h2>Profile</h2>
+          <p>Passionate about building practical AI systems for audio, vision, and smart city applications. Focused on end‑to‑end machine learning — from data preprocessing to model evaluation and deployment.</p>
+        </div>
+
+        <div class="card">
+          <h2>Skills</h2>
+          <div class="skills-list">
+            <span>Python</span><span>C++</span><span>Java</span><span>SQL</span><span>HTML</span><span>CSS</span>
+            <span>TensorFlow</span><span>Keras</span><span>Scikit‑learn</span><span>OpenCV</span><span>Librosa</span>
+            <span>Jupyter Notebook</span><span>VS Code</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Education</h2>
+          <p><strong>B.Tech in Computer Science and Engineering</strong><br>
+          Bennett University<br>
+          CGPA: 8.9 (1st Year), 8.6 (2nd Year)<br>
+          Expected Graduation: 2027</p>
+          <p><strong>Father Agnel School</strong><br>
+          Class XII – 89.25% (2022)<br>
+          Class X – 91.8% (2020)</p>
+        </div>
+      </aside>
+
+      <section>
+        <div class="card">
+          <h2>Projects</h2>
+
+          <div class="project">
+            <h3>Voice Emotion Detection</h3>
+            <p>Machine learning system to automatically identify emotions from human speech for mental‑health monitoring, customer service, and AI assistants.</p>
+            <ul>
+              <li>Preprocessed audio, extracted MFCC, Chroma, Mel‑spectrogram and other features using Librosa.</li>
+              <li>Trained and compared classical ML models with deep learning (CNN/LSTM) in TensorFlow/Keras.</li>
+              <li>Evaluated using accuracy, precision, recall, F1‑score and confusion matrix.</li>
+              <li><strong>Result:</strong> Achieved about 93% accuracy on multi‑class emotion classification.</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>Skin Cancer Detection (Computer Vision)</h3>
+            <p>Built a CNN‑based classifier to distinguish between benign and malignant skin lesions using dermoscopic images.</p>
+            <ul>
+              <li>Performed image preprocessing and augmentation to improve robustness.</li>
+              <li>Experimented with different CNN architectures and transfer learning approaches.</li>
+              <li>Evaluated with accuracy and confusion matrix to understand class‑wise performance.</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>Smart Traffic Management System</h3>
+            <p>AI‑driven traffic signal controller using computer vision to adapt signal timing based on real‑time traffic density.</p>
+            <ul>
+              <li>Used object detection (e.g., YOLO / OpenCV) to count vehicles in each lane.</li>
+              <li>Dynamically adjusted green‑light durations to reduce overall waiting time.</li>
+              <li>Simulated improvement in traffic flow compared to fixed‑timer signals.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Certifications (Coursera)</h2>
+          <ul>
+            <li>Introduction to TensorFlow for AI, ML, and Deep Learning – 100% (Mar 2025)</li>
+            <li>Dynamic Programming & Greedy Algorithm – 99.90% (Mar 2025)</li>
+            <li>Data Visualization with R – 98% (Sep 2024)</li>
+            <li>Database and SQL for Data Science with Python – 92.5% (Nov 2024)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Contact</h2>
+          <p>If you’d like to collaborate, discuss projects, or offer an internship opportunity, feel free to reach out.</p>
+          <p><strong>Email:</strong> <a href="mailto:E23CSEU1418@bennett.edu.in">E23CSEU1418@bennett.edu.in</a><br>
+          <strong>GitHub:</strong> <a href="https://github.com/Pycoderr" target="_blank">github.com/Pycoderr</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span class="small-label">Portfolio generated from resume data · Kenneth Lobo</span>
+    </footer>
+  </div>
+</body>
+</html>
